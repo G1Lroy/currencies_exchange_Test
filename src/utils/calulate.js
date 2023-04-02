@@ -1,0 +1,1 @@
+export const calc = ((value, from, to) => value * from / to)
