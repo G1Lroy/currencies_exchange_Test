@@ -1,0 +1,23 @@
+.reset-button {
+    user-select: none;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 6px 12px;
+
+}
+
+.reset-button:hover {
+    background-color: #f39959;
+}
+
+.reset-button:active {
+    
+  transform: scale(0.9);
+}
+
+.reset-button img {
+    width: 10px;
+    height: 10px;
+}

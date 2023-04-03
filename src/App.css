@@ -1,5 +1,58 @@
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    margin: 0;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+input,
+button,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+button {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+    outline: none;
+}
+
+.App {
+    height: 100vh;
+    
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(270deg, #bda6fe 0%, #fab06c 100%);
+}
+
+.group {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
 }

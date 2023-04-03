@@ -8,6 +8,7 @@ import { getRates } from "./utils/getRates";
 import { format } from "./utils/formatt"
 import { calc } from './utils/calulate';
 import { clearInputs } from './utils/clearInputs';
+import Button from "./components/Button"
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
     const toAmount = checkInput ? format(calc(inputValue, fromRate, toRate)) : inputValue;
 
     setInputsValue({ ...inputsValue, fromAmount, toAmount, });
+
   };
   const handleSelectsChange = (value, name) => {
     name === "selectOne"
@@ -68,7 +70,6 @@ function App() {
       selectRates.fromRates,
       selectRates.toRates,
     )
-
   }, [selectRates.fromRates])
 
   useEffect(() => {
@@ -78,7 +79,11 @@ function App() {
       selectRates.fromRates,
       selectRates.toRates,
     )
+
   }, [selectRates.toRates])
+
+
+
 
 
 
@@ -88,11 +93,20 @@ function App() {
         load={load}
         currencies={currencies}>
       </Header>
-      <div style={{ display: "flex", justifyContent: 'center' }}>
-        <button
-          onClick={() => clearInputs("fromAmount", inputsValue, setInputsValue)}>
-          X
-        </button>
+      <div className='group'>
+        <Select
+          name="selectOne"
+          currencies={currencies}
+          onChange={(e) => {
+            handleSelectsChange(
+              e.target.value,
+              e.target.name,
+            )
+          }}
+          disableOption={selectRates.toRates}
+          value={selectRates.fromRates}
+        >
+        </Select>
         <Input
           name="inputOne"
           type="number"
@@ -107,8 +121,14 @@ function App() {
           }}
         >
         </Input>
+        <Button
+          onClick={() => clearInputs("fromAmount", inputsValue, setInputsValue)}>
+        </Button>
+      </div>
+
+      <div className='group'>
         <Select
-          name="selectOne"
+          name="selectTwo"
           currencies={currencies}
           onChange={(e) => {
             handleSelectsChange(
@@ -116,17 +136,9 @@ function App() {
               e.target.name,
             )
           }}
-          disableOption={selectRates.toRates}
-          value={selectRates.fromRates}
-        >
+          disableOption={selectRates.fromRates}
+          value={selectRates.toRates}>
         </Select>
-      </div>
-      <hr style={{ padding: 20 }}></hr>
-      <div style={{ display: "flex", justifyContent: 'center' }}>
-        <button
-          onClick={() => clearInputs("toAmount", inputsValue, setInputsValue)}>
-          X
-        </button>
         <Input
           name="inputTwo"
           type="number"
@@ -141,18 +153,9 @@ function App() {
           }}
         >
         </Input>
-        <Select
-          name="selectTwo"
-          currencies={currencies}
-          onChange={(e) => {
-            handleSelectsChange(
-              e.target.value,
-              e.target.name,
-            )
-          }}
-          disableOption={selectRates.fromRates}
-          value={selectRates.toRates}>
-        </Select>
+        <Button
+          onClick={() => clearInputs("toAmount", inputsValue, setInputsValue)}>
+        </Button>
       </div>
     </div >
   )

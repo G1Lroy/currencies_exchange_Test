@@ -1,0 +1,21 @@
+.user-input {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in;
+
+}
+
+.user-input:focus {
+    background-color: #ffffff;
+}
+
+.user-input::placeholder {
+    color: rgb(0, 0, 0);
+}

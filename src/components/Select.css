@@ -1,0 +1,18 @@
+.user-select {
+    padding: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.user-select:focus {
+    outline: none;
+    background-color: #ffffff;
+}
+
+.user-select option {
+    border: 1px solid #000000;
+}
