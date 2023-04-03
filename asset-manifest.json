@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.49f87442.css",
-    "main.js": "/static/js/main.d14ad31e.js",
-    "static/media/eu.svg": "/static/media/eu.9bbe535283a994c03fe857e510d8a8f2.svg",
-    "static/media/gbp.svg": "/static/media/gbp.e1c3306d8eb2378a9a0960828c8d7680.svg",
-    "static/media/usa.svg": "/static/media/usa.5cb6dfb8e65f9a567e58265730bc3e68.svg",
-    "index.html": "/index.html",
-    "static/media/clearLogo.svg": "/static/media/clearLogo.3288f51a4bb4db3ec5d1da430fcfb7b6.svg",
-    "main.49f87442.css.map": "/static/css/main.49f87442.css.map",
-    "main.d14ad31e.js.map": "/static/js/main.d14ad31e.js.map"
+    "main.css": "/currencies_exchange_Test/static/css/main.49f87442.css",
+    "main.js": "/currencies_exchange_Test/static/js/main.ba638559.js",
+    "static/media/eu.svg": "/currencies_exchange_Test/static/media/eu.9bbe535283a994c03fe857e510d8a8f2.svg",
+    "static/media/gbp.svg": "/currencies_exchange_Test/static/media/gbp.e1c3306d8eb2378a9a0960828c8d7680.svg",
+    "static/media/usa.svg": "/currencies_exchange_Test/static/media/usa.5cb6dfb8e65f9a567e58265730bc3e68.svg",
+    "index.html": "/currencies_exchange_Test/index.html",
+    "static/media/clearLogo.svg": "/currencies_exchange_Test/static/media/clearLogo.3288f51a4bb4db3ec5d1da430fcfb7b6.svg",
+    "main.49f87442.css.map": "/currencies_exchange_Test/static/css/main.49f87442.css.map",
+    "main.ba638559.js.map": "/currencies_exchange_Test/static/js/main.ba638559.js.map"
   },
   "entrypoints": [
     "static/css/main.49f87442.css",
-    "static/js/main.d14ad31e.js"
+    "static/js/main.ba638559.js"
   ]
 }
